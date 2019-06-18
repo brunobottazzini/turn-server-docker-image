@@ -95,4 +95,5 @@ docker push boldt/coturn:$VERSION
 
 # Thanks
 
+The initial image of this image was created by [boldt/turn-server-docker-image](https://github.com/boldt/turn-server-docker-image) and
 The initial image of this image was created by [anastasiia-zolochevska/turn-server-docker-image](https://github.com/anastasiia-zolochevska/turn-server-docker-image)
