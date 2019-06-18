@@ -2,7 +2,7 @@
 
 A Docker container with the [Coturn TURN server](https://github.com/coturn/coturn).
 
-* hub.docker.com (Docker image): [boldt/coturn](https://hub.docker.com/r/boldt/coturn/)
+* hub.docker.com (Docker image): [brunobottazzini/coturn](https://hub.docker.com/r/brunobottazzini/coturn/)
 * github.com (Repo): [brunobottazzini/turn-server-docker-image](https://github.com/brunobottazzini/turn-server-docker-image)
 
 # Run the container
