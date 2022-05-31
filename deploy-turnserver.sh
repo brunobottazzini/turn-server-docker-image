@@ -2,6 +2,8 @@ echo "USERNAME: $USERNAME"
 echo "PASSWORD: $PASSWORD"
 echo "REALM: $REALM"
 echo "PORT RANGE: $MIN_PORT-$MAX_PORT"
+echo "SHARED_SECRET: $SHARED_SECRET"
+echo "VERBOSE: $VERBOSE"
 
 internalIp="$(ip a | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')"
 externalIp="$(dig +short myip.opendns.com @resolver1.opendns.com)"
