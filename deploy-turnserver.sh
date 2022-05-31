@@ -21,6 +21,11 @@ userdb=/var/lib/turn/turndb
 cert=/etc/ssl/turn_server_cert.pem
 pkey=/etc/ssl/turn_server_pkey.pem"  | tee /etc/turnserver.conf
 
+if [ -n "$SHARED_SECRET" ]; then
+    echo "use-auth-secret" >> /etc/turnserver.conf
+    echo "static-auth-secret=$SHARED_SECRET" >> /etc/turnserver.conf
+fi
+
 turnadmin -a -u $USERNAME -p $PASSWORD -r $REALM
 
 echo "Start TURN server..."
