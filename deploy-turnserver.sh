@@ -28,6 +28,10 @@ if [ -n "$SHARED_SECRET" ]; then
     echo "static-auth-secret=$SHARED_SECRET" >> /etc/turnserver.conf
 fi
 
+if [ "$VERBOSE" == "true" ];then
+    echo "verbose" >> /etc/turnserver.conf
+fi
+
 turnadmin -a -u $USERNAME -p $PASSWORD -r $REALM
 
 echo "Start TURN server..."
