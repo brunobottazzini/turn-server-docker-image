@@ -24,6 +24,8 @@ This image supports some environment variables:
 
 * `USERNAME`: Username needed for turn. Defaults to `username`
 * `PASSWORD`: Password needed for turn. Defaults ro `password`
+* `SHARED_SECRET`: To enable credentials generation from a third part server
+* `VERBOSE`: to enable log in verbose mode
 * `REALM`: Realm needed for turn. Defaults to `realm`
 * `MIN_PORT`: This defines the min-port for the range used by turn. Defaults to `65435`
 * `MAX_PORT`: This defines the max-port for the range used by turn. Defaults to `65535`
